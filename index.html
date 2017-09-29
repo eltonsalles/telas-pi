@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>The Code</title>
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<!-- Style do PI -->
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+	<header class="navbar-fixed black">
+		<nav class="black ocultar-navbar">
+			<div class="row">
+				<div class="col s8 m10 l9">
+					<div class="nav-wrapper">
+						<a href="index.html" class="brand-logo">Logo</a>
+						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+						<nav class="col offset-m2 m7 offset-l2 l7 black z-depth-0 hide-on-med-and-down ocultar-navbar">
+							<div class="nav-wrapper">
+								<form>
+									<div class="input-field div-search">
+										<input id="search" type="search" name="search" required>
+										<label class="label-icon" for="search"><i class="material-icons">search</i></label><i class="material-icons">close</i>
+									</div>
+								</form>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<div class="col s2 m1 l2">
+					<a href="#" class="white-text"><i class="large material-icons left">account_box</i><span class="text-account-box hide-on-med-and-down">Login/Cadastro</span></a>
+				</div>
+				<div class="col s2 m1 l1">
+					<a href="#"><i class="large material-icons">shopping_cart</i></a>
+				</div>
+				<div class="col m12 black hide-on-med-and-down menu-desktop">
+					<div class="nav-content">
+						<ul class="tabs tabs-transparent remove-indicator">
+							<li class="tab"><a target="_self" href="#">PS4</a></li>
+							<li class="tab"><a target="_self" href="lista-produto.html">PS3</a></li>
+							<li class="tab"><a target="_self" href="#">XBOX ONE</a></li>
+							<li class="tab"><a target="_self" href="#">XBOX360</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<ul class="side-nav" id="mobile-demo">
+		<li><a href="#">PS4</a></li>
+		<li><a href="lista-produto.html">PS3</a></li>
+		<li><a href="#">XBOX ONE</a></li>
+		<li><a href="#">XBOX360</a></li>
+	</ul>
+	<nav class="col s12 grey darken-2 z-depth-0 hide-on-large-only">
+		<div class="nav-wrapper">
+			<form>
+				<div class="input-field">
+					<input id="search-mobile" type="search" name="search" required>
+					<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+					<i class="material-icons">close</i>
+				</div>
+			</form>
+		</div>
+	</nav>
+	<div class="carousel carousel-slider" data-indicators="true">
+		<a class="carousel-item" href="#one!"><img src="assets/imgs/banners/banner1.jpg" alt="PES 2018"></a>
+		<a class="carousel-item" href="#two!"><img src="assets/imgs/banners/banner2.jpg" alt="Destiny 2"></a>
+		<a class="carousel-item" href="#three!"><img src="assets/imgs/banners/banner3.jpg" alt="NBA2k 18"></a>
+		<a class="carousel-item" href="#four!"><img src="assets/imgs/banners/banner4.jpg" alt="Knack II"></a>
+		<a class="carousel-item" href="#five!"><img src="assets/imgs/banners/banner5.jpg" alt="Uncharted - The Lost Legacy"></a>
+	</div>
+	<main class="container">
+		<div class="row">
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="detalhes-produto.html"><img class="responsive-img" src="assets/imgs/produtos/1.jpg" alt="Skyrim - PS3"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">Skyrim</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 199,99</span><br>R$ 179,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/2.jpg" alt="PES 2017 - PS3"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">PES 2017</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 99,99</span><br>R$ 89,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/3.jpg" alt="Mortal Kombat - PS3"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">Mortal Kombat</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 109,99</span><br>R$ 98,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/4.jpg" alt="Resident Evil 6 - PS3"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">Resident Evil 6</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 149,99</span><br>R$ 134,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/5.jpg" alt="GTA V - PS3"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">Grand Theft Auto V</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 199,99</span><br>R$ 179,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/6.jpg" alt="SSX - PS3"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">SSX</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 99,99</span><br>R$ 89,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/7.jpg" alt="Injustice - PS3"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">Injustice</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 199,99</span><br>R$ 179,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/8.jpg" alt="Sombras de Mordor - PS3"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">Sombras de Mordor</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 99,99</span><br>R$ 89,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/9.jpg" alt="Dead Space 2 - PS3"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">Dead Space 2</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 49,99</span><br>R$ 44,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/10.jpg" alt="Fallout 4 - Xbox One"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">Fallout 4</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 199,99</span><br>R$ 179,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/11.jpg" alt="F1 2017 - Xbox One"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">F1 2017</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 199,99</span><br>R$ 179,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+			<div class="col s6 m3 produto">
+				<article class="col col-content z-depth-2">
+					<div class="col s12 m12">
+						<a href="#"><img class="responsive-img" src="assets/imgs/produtos/12.jpg" alt="Dragon Ball Xenoverse 2 - Xbox One"></a>
+					</div>
+					<div class="col s12 m12">
+						<h6 class="center-align">Dragon Ball Xenoverse 2</h6>
+					</div>
+					<div class="col s12 m12">
+						<div class="col s8 m8">
+							<p class="preco a-vista">
+								<span>R$ 199,99</span><br>R$ 179,99
+							</p>
+						</div>
+						<div class="col s4 m4 add-carrinho">
+							<a href="#"><i class="material-icons">add_shopping_cart</i></a>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</main>
+	<a class="btn-floating btn-large waves-effect waves-light orange btn-voltar-topo"><i class="large material-icons">expand_less</i></a>
+	<footer class="page-footer black">
+		<div class="container">
+			<div class="row">
+				<div class="col 16 s12">
+					<p class="white-text">The Code Comércio Virtual LTDA</p>
+					<p class="grey-text text-lighten-4">CNPJ: 85.755.470/0001-18 Rua Teste, 123, 10º andar - CEP: 12345-678, Bairro Teste São Paulo - SP</p>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<p>© 2017 Copyright Text</p>
+			</div>
+		</div>
+	</footer>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<!-- Js do PI -->
+	<script src="assets/programa.js"></script>
+</body>
+</html>

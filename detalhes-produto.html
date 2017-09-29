@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>The Code</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Style do PI -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="navbar-fixed black">
+        <nav class="black ocultar-navbar">
+            <div class="row">
+                <div class="col s8 m10 l9">
+                    <div class="nav-wrapper">
+                        <a href="index.html" class="brand-logo">Logo</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <nav class="col offset-m2 m7 offset-l2 l7 black z-depth-0 hide-on-med-and-down ocultar-navbar">
+                            <div class="nav-wrapper">
+                                <form>
+                                    <div class="input-field div-search">
+                                        <input id="search" type="search" name="search" required>
+                                        <label class="label-icon" for="search"><i class="material-icons">search</i></label><i class="material-icons">close</i>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col s2 m1 l2">
+                    <a href="#" class="white-text"><i class="large material-icons left">account_box</i><span class="text-account-box hide-on-med-and-down">Login/Cadastro</span></a>
+                </div>
+                <div class="col s2 m1 l1">
+                    <a href="#"><i class="large material-icons">shopping_cart</i></a>
+                </div>
+                <div class="col m12 black hide-on-med-and-down menu-desktop">
+                    <div class="nav-content">
+                        <ul class="tabs tabs-transparent remove-indicator">
+                            <li class="tab"><a target="_self" href="#">PS4</a></li>
+                            <li class="tab"><a target="_self" href="lista-produto.html">PS3</a></li>
+                            <li class="tab"><a target="_self" href="#">XBOX ONE</a></li>
+                            <li class="tab"><a target="_self" href="#">XBOX360</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">PS4</a></li>
+        <li><a href="lista-produto.html">PS3</a></li>
+        <li><a href="#">XBOX ONE</a></li>
+        <li><a href="#">XBOX360</a></li>
+    </ul>
+    <nav class="col s12 grey darken-2 z-depth-0 hide-on-large-only">
+        <div class="nav-wrapper">
+            <form>
+                <div class="input-field">
+                    <input id="search-mobile" type="search" name="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="parallax-container">
+        <div class="parallax black">
+            <img src="assets/imgs/parallax/1.jpg" alt="The Eleder Scrolls V: Skyrim">
+        </div>
+    </div>
+    <main class="container">
+        <div class="row">
+            <nav class="z-depth-0 white breadcrumb-site">
+                <div class="nav-wrapper">
+                    <div class="col s12">
+                        <a href="index.html" class="breadcrumb">Início</a>
+                        <a href="lista-produto.html" class="breadcrumb">Lista de Produtos</a>
+                        <a href="#" class="breadcrumb">Jogo PS3</a>
+                        <a href="#" class="breadcrumb">Skyrim</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col s12 offset-m6 m6">
+                <h4 class="center-align">Skyrim</h4>
+            </div>
+            <div class="col s12 m5">
+                <img class="responsive-img" src="assets/imgs/produtos/1.jpg" alt="Skyrim - PS3">
+            </div>
+            <div class="col s12 m7">
+                <div class="col s12 m12">
+                    <p class="preco detalhes-produto">
+                        <span>R$ 199,99</span><br>R$ 179,99<span class="a-vista"></span><strong class="boleto-bancario">via Boleto Bancário</strong>
+                    </p>
+                    <p class="pagamento-parcelado">
+                        ou<br>10x de R$ 19,99 sem juros
+                    </p>
+                    <a class="waves-effect waves-light btn-large orange darken-1 btn-comprar" href="carrinho-produto.html"><i class="material-icons left">add_shopping_cart</i>Comprar</a>
+                </div>
+                <div class="col s12">
+                    <form action="#" class="col s12" id="form-frete">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="input-field col 12 m4">
+                                    <input type="text" value="01234-567" name="calcular-frete" id="calcular-frete" class="input-field" required>
+                                    <label for="calcular-frete">Calcular Frete</label>
+                                </div>
+                                <div class="input-field col s12 m8 texto-frete">
+                                    <p><strong>Correios</strong><br>[e-SEDEX] Entrega em até 5 dias úteis após a confirmação de pagamento - R$ 9,90<br>[PAC] Entrega em até 13 dias úteis após a confirmação de pagamento - R$ 20,01</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col s12 m12">
+                    <ul class="collection with-header valores-parcela">
+                        <li class="collection-header"><h6>Parcelas<i class="small material-icons right">credit_card</i></h6></li>
+                        <li class="collection-item">
+                            <div>1x de R$ 199,99 sem juros<div class="secondary-content">6x de R$ 33,33 sem juros</div></div>
+                            <div>2x de R$ 100,00 sem juros<div class="secondary-content">7x de R$ 28,57 sem juros</div></div>
+                            <div>3x de R$ 66,66 sem juros<div class="secondary-content">8x de R$ 25,00 sem juros</div></div>
+                            <div>4x de R$ 50,00 sem juros<div class="secondary-content">9x de R$ 22,22 sem juros</div></div>
+                            <div>5x de R$ 40,00 sem juros<div class="secondary-content">10x de R$ 20,00 sem juros</div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col s12 m12">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">view_headline</i>Descrição</div>
+                        <div class="collapsible-body"><span>The Elder Scrolls V: Skyrim se destaca pelos cenários colossais e épicos, no melhor estilo medieval possível. No entanto, o título conta com uma nova engine, capaz de entregar gráficos muito melhores do que os vistos em Oblivion e Fallout 3. Além de seus gráficos e engine melhorados, a trilha sonora do jogo surpreende muitos os fãs da saga Skyrim e fazem uma combinação perfeita com os cenários épicos.<br><br>Como estava escrito nos Pergaminhos Antigos, a guerra em Skyrim é o último passo para o retorno de Alduin, o deus dragão da destruição. Agora, você deve encarar seu destino como o último Dovahkiin, um caçador de dragões ungido pelos deuses para combater a ameaça de Alduin. Vista sua armadura, espada, arco e derrote todos os perigos que aparecerão em sua jornada.</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">list</i>Especificações</div>
+                        <div class="collapsible-body">
+                            <span>
+                                <strong>Produtora: </strong>Bethesda<br>
+                                <strong>Ano de lançamento: </strong>nov/2011<br>
+                                <strong>Idiomas: </strong>Inglês<br>
+                                <strong>Legendas: </strong>Inglês<br>
+                                <strong>Idade Recomendada: </strong>Para maiores de 18 anos<br>
+                                <strong>Número de jogadores offline: </strong>1<br>
+                                <strong>Número de jogadores online:</strong>-<br>
+                                <strong>Resolução: </strong>Até 720p
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">playlist_add_check</i>Requisitos</div>
+                        <div class="collapsible-body"><span>PlayStation 3</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">done</i>Itens Inclusos</div>
+                        <div class="collapsible-body"><span>Encarte<br>Mídia<br>Manual</span></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">assignment_turned_in</i>Garantia</div>
+                        <div class="collapsible-body"><span>3 meses contra defeitos de fabricação</span></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m12">
+                <p class="ilustrativa">* Imagens meramente ilustrativas. Selos, ilustrações ou informações que constam na embalagem podem ser diferentes do produto disponível em estoque.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12">
+                <h5 class="header">Produtos Relacionados</h5>
+            </div>
+            <div class="col s6 m3 produto">
+                <article class="col col-content z-depth-2">
+                    <div class="col s12 m12">
+                        <a href="#"><img class="responsive-img" src="assets/imgs/produtos/1.jpg" alt="Skyrim - PS3"></a>
+                    </div>
+                    <div class="col s12 m12">
+                        <h6 class="center-align">Skyrim</h6>
+                    </div>
+                    <div class="col s12 m12">
+                        <div class="col s8 m8">
+                            <p class="preco a-vista">
+                                <span>R$ 199,99</span><br>R$ 179,99
+                            </p>
+                        </div>
+                        <div class="col s4 m4 add-carrinho">
+                            <a href="#"><i class="material-icons">add_shopping_cart</i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col s6 m3 produto">
+                <article class="col col-content z-depth-2">
+                    <div class="col s12 m12">
+                        <a href="#"><img class="responsive-img" src="assets/imgs/produtos/2.jpg" alt="PES 2017 - PS3"></a>
+                    </div>
+                    <div class="col s12 m12">
+                        <h6 class="center-align">PES 2017</h6>
+                    </div>
+                    <div class="col s12 m12">
+                        <div class="col s8 m8">
+                            <p class="preco a-vista">
+                                <span>R$ 99,99</span><br>R$ 89,99
+                            </p>
+                        </div>
+                        <div class="col s4 m4 add-carrinho">
+                            <a href="#"><i class="material-icons">add_shopping_cart</i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col s6 m3 produto">
+                <article class="col col-content z-depth-2">
+                    <div class="col s12 m12">
+                        <a href="#"><img class="responsive-img" src="assets/imgs/produtos/3.jpg" alt="Mortal Kombat - PS3"></a>
+                    </div>
+                    <div class="col s12 m12">
+                        <h6 class="center-align">Mortal Kombat</h6>
+                    </div>
+                    <div class="col s12 m12">
+                        <div class="col s8 m8">
+                            <p class="preco a-vista">
+                                <span>R$ 109,99</span><br>R$ 98,99
+                            </p>
+                        </div>
+                        <div class="col s4 m4 add-carrinho">
+                            <a href="#"><i class="material-icons">add_shopping_cart</i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col s6 m3 produto">
+                <article class="col col-content z-depth-2">
+                    <div class="col s12 m12">
+                        <a href="#"><img class="responsive-img" src="assets/imgs/produtos/4.jpg" alt="Resident Evil 6 - PS3"></a>
+                    </div>
+                    <div class="col s12 m12">
+                        <h6 class="center-align">Resident Evil 6</h6>
+                    </div>
+                    <div class="col s12 m12">
+                        <div class="col s8 m8">
+                            <p class="preco a-vista">
+                                <span>R$ 149,99</span><br>R$ 134,99
+                            </p>
+                        </div>
+                        <div class="col s4 m4 add-carrinho">
+                            <a href="#"><i class="material-icons">add_shopping_cart</i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+    <a class="btn-floating btn-large waves-effect waves-light orange btn-voltar-topo"><i class="large material-icons">expand_less</i></a>
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col 16 s12">
+                    <p class="white-text">The Code Comércio Virtual LTDA</p>
+                    <p class="grey-text text-lighten-4">CNPJ: 85.755.470/0001-18 Rua Teste, 123, 10º andar - CEP: 12345-678, Bairro Teste São Paulo - SP</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2017 Copyright Text</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Js do PI -->
+    <script src="assets/programa.js"></script>
+</body>
+</html>

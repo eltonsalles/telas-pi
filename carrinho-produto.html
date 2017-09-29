@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>The Code</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Style do PI -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="">
+    <header class="navbar-fixed">
+        <nav class="black ocultar-navbar">
+            <div class="row">
+                <div class="col s3 m3 l3">
+                    <div class="nav-wrapper">
+                        <a href="index.html" class="brand-logo">Logo</a>
+                    </div>
+                </div>
+                <div class="col offset-s2 s7 offset-m5 m4 offset-l6 l3">
+                    <button class="btn-large waves-effect waves-light orange btn-nav-finalizar-compra" type="submit" name="action">Finalizar Compra<i class="material-icons left">done</i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col s12 m6 btn-escolher-mais-produtos">
+                <br>
+                <a class="waves-effect waves-light btn grey" href="index.html"><i class="material-icons left">arrow_back</i>Escolher mais produtos</a>
+            </div>
+            <div class="col s12 m6 titulo-carrinho-compras">
+                <div>
+                    <h4 class="center-align">Carrinho de Compras</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <form action="#" class="col s12" id="carrinho-compra">
+                <div class="row z-depth-2">
+                    <div class="input-field col offset-s4 s4 m2">
+                        <img class="responsive-img" src="assets/imgs/produtos/1.jpg" alt="Skyrim - PS3">
+                    </div>
+                    <br>
+                    <div class="input-field col offset-s4 s6 m4">
+                        <input type="text" value="Skyrim" name="item-produto" id="item-produto1" class="input-field" readonly>
+                        <label for="item-produto1">Item</label>
+                    </div>
+                    <div class="input-field col offset-s4 s4 m2">
+                        <input type="text" value="R$ 199,99" name="item-preco" id="item-preco1" class="input-field" readonly>
+                        <label for="item-preco1">Preço</label>
+                    </div>
+                    <div class="input-field col offset-s4 s4 m1">
+                        <input type="number" value="1" name="qtde-item" id="qtde-item1" class="input-field" min="1">
+                        <label for="qtde-item1">Qtde</label>
+                    </div>
+                    <div class="input-field col offset-s4 s4 m2">
+                        <input type="text" value="R$ 199,99" name="subtotal-item1" id="subtotal-item1" class="input-field" readonly>
+                        <label for="subtotal-item1">SubTotal</label>
+                    </div>
+                    <div class="col offset-s5 s4 m1 btn-excluir-produto">
+                        <a class="btn-floating btn waves-effect waves-light red"><i class="material-icons">remove_shopping_cart</i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 z-depth-1 grey lighten-2">
+                        <div class="col s4 m2">
+                            <div class="valign-wrapper">
+                                <p>Subtotal</p>
+                            </div>
+                        </div>
+                        <div class="input-field col offset-s4 s4 offset-m8 m2">
+                            <input type="text" value="R$ 199,99" name="subtotal" id="subtotal" class="input-field" readonly>
+                        </div>
+                    </div>
+                    <div class="col s12 z-depth-1 grey lighten-1">
+                        <div class="input-field col s4 m3">
+                            <input type="text" value="01234-567" name="calcular-frete" id="calcular-frete" class="input-field" required>
+                            <label for="calcular-frete">Calcular Frete</label>
+                        </div>
+                        <div class="input-field col offset-s4 s4 offset-m7 m2">
+                            <input type="text" value="R$ 9,42" name="valor-frete" id="valor-frete" class="input-field" readonly>
+                        </div>
+                    </div>
+                    <div class="col s12 z-depth-1 grey darken-4 white-text">
+                        <div class="col s4 m2">
+                            <div class="valign-wrapper">
+                                <p>Total</p>
+                            </div>
+                        </div>
+                        <div class="input-field col offset-s4 s4 offset-m8 m2">
+                            <input type="text" value="R$ 209,41" name="total" id="total" class="input-field" readonly>
+                        </div>
+                    </div>
+                    <div class="col s12 finalizar-compra">
+                        <button class="btn-large waves-effect waves-light orange right" type="submit" name="action">
+                            Finalizar Compra<i class="material-icons left">done</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col 16 s12">
+                    <p class="white-text">The Code Comércio Virtual LTDA</p>
+                    <p class="grey-text text-lighten-4">CNPJ: 85.755.470/0001-18 Rua Teste, 123, 10º andar - CEP: 12345-678, Bairro Teste São Paulo - SP</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© 2017 Copyright Text</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- Js do PI -->
+    <script src="assets/programa-carrinho.js"></script>
+</body>
+</html>
